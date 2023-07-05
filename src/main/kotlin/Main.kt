@@ -4,8 +4,10 @@ fun main(args: Array<String>) {
     val fee = 0.0075
     val minFee = 35
     val resultFee = if (amount * fee > minFee) amount * fee else minFee
-    println("""
+    println(
+        """
         Сумма перевода: $amount
         Размер комиссии составит: $resultFee
-        """.trimIndent())
+        """.trimIndent()
+    )
 }
